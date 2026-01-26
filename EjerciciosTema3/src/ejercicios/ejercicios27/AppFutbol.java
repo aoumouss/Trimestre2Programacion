@@ -2,12 +2,13 @@ package ejercicios.ejercicios27;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class AppFutbol {
 
 	public static void main(String[] args) {
 
-		
+		Scanner sc = new Scanner(System.in);
 		ArrayList<Jugador> jugadoresA = new ArrayList<>();
 		ArrayList<Jugador> jugadoresB = new ArrayList<>();
 		
@@ -24,7 +25,6 @@ public class AppFutbol {
 		equipoA.setJugadores(jugadoresA);
 		
 		Equipo equipoB=new Equipo("Barcelona");
-
 		Jugador jugadorB1=new Jugador("Messi",1);
 		Jugador jugadorB2=new Jugador("Lamine",2);
 		Jugador jugadorB3=new Jugador("Vinicius",3);
@@ -32,6 +32,7 @@ public class AppFutbol {
 		jugadoresB.add(jugadorB2);
 		jugadoresB.add(jugadorB3);
 		equipoB.setJugadores(jugadoresB);
+		
 		equipoA.setCapitan(jugadoresA.get(0));
 		equipoB.setCapitan(jugadoresB.get(0));
 		
@@ -44,11 +45,22 @@ public class AppFutbol {
 		
 		Partido partido = new Partido();
 		Resultado resultado= new Resultado();
-		resultado.toString();
+		resultado.setGolesLocales(0);
+		resultado.setGolesVisitante(0);
+		System.out.println(resultado.isEmpate());
+		System.out.println(resultado);
+		
+		System.out.println("Dime los goles del equipo local: ");
+		Integer golesLocales= sc.nextInt();
+		resultado.setGolesLocales(golesLocales);
+		System.out.println("Ahora los goles del equipo visitante: ");
+		Integer golesVisitantes=sc.nextInt();
+		resultado.setGolesVisitante(golesVisitantes);
+		partido.getEquipoGanador();
 		
 		
 		
-		
+	
 	}
 
 }

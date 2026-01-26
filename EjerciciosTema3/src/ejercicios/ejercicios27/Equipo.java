@@ -76,7 +76,7 @@ public class Equipo {
 	
 	
 	public String toString() {
-		return nombre+" - Capitán:"+capitan+"- Jugadores: "+jugadores;
+		return nombre+" - Capitán:"+capitan.getNombre()+"- Jugadores: "+jugadores;
 		
 	}
 	

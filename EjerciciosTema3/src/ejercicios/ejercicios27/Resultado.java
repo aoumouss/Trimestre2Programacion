@@ -59,28 +59,17 @@ public class Resultado {
 	
 	
 	public Boolean isVictoriaLocal() {
-		Boolean victoriaLocal=false;
-		if(golesLocales>golesVisitante) {
-			return victoriaLocal=true;
-		}
-		 return victoriaLocal;
+		return(golesLocales>golesVisitante);
 	}
 	
 	
 	public Boolean isVictoriaVisitante() {
-		Boolean victoriaVisitante=false;
-		if(golesLocales<golesVisitante) {
-			return victoriaVisitante=true;
-		}
-		 return victoriaVisitante;
+		return(golesLocales<golesVisitante);
+			
 	}
 	
 	public Boolean isEmpate() {
-		Boolean empate=false;
-		if(golesLocales==golesVisitante) {
-			return empate=true;
-		}
-		return empate;
+		return golesLocales.equals(golesVisitante);
 	}
 	
 	
