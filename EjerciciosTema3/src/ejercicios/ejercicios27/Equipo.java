@@ -9,6 +9,7 @@ public class Equipo {
 	private String nombre;
 	private Jugador capitan;
 	private List<Jugador> jugadores;
+	private static String competicion;
 	
 	
 	
@@ -17,6 +18,18 @@ public class Equipo {
 		jugadores =new ArrayList<>();
 	}
 
+
+	
+	
+	
+	public static String getCompeticion() {
+		return competicion;
+	}
+
+
+	public static void setCompeticion(String competicion) {
+		Equipo.competicion = competicion;
+	}
 
 
 	public String getNombre() {

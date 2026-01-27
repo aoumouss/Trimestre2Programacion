@@ -9,8 +9,8 @@ public class AppFutbol {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		ArrayList<Jugador> jugadoresA = new ArrayList<>();
-		ArrayList<Jugador> jugadoresB = new ArrayList<>();
+		List<Jugador> jugadoresA = new ArrayList<Jugador>();
+		List<Jugador> jugadoresB = new ArrayList<Jugador>();
 		
 		
 		
@@ -57,6 +57,8 @@ public class AppFutbol {
 		Integer golesVisitantes=sc.nextInt();
 		resultado.setGolesVisitante(golesVisitantes);
 		partido.getEquipoGanador();
+		
+		
 		
 		
 		
