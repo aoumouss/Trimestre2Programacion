@@ -45,6 +45,11 @@ public class  Pelicula {
 	}
 	
 	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
 	
 	
 	
