@@ -11,6 +11,10 @@ public class  Pelicula {
 	private Guionista guionista;
 	private Director director;
 	
+	public Pelicula() {
+		listaActores = new ArrayList<>();
+	}
+	
 	
 	public Integer getAnoEstreno() {
 		return anoEstreno;

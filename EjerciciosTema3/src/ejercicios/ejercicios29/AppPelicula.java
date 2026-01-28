@@ -36,7 +36,7 @@ public class AppPelicula {
 		
 		
 		Guionista guionista1=new Guionista();
-		guionista1.setNombre("Marco Smith");
+		guionista1.setNombre("Marc Smith");
 		guionista1.setNacionalidad("Reino Unido");
 		guionista1.setAnoNacimiento(1998);
 		
@@ -55,6 +55,7 @@ public class AppPelicula {
 		pelicula1.setTitulo("Do you know Joe Blas");
 	
 		System.out.println(pelicula1.getListaActores());
+		System.out.println(pelicula1.getGuionista().getNacionalidad());
 	
 	
 	

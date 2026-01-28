@@ -5,6 +5,8 @@ public abstract class Trabajador {
 	private String nombre;
 	private Integer anoNacimiento;
 	private String nacionalidad;
+	
+	
 	public String getNombre() {
 		return nombre;
 	}
@@ -26,6 +28,11 @@ public abstract class Trabajador {
 	}
 	
 	public abstract Integer getSueldo();
+	
+	public String toString() {
+		
+		return nombre+" "+nacionalidad+" "+anoNacimiento;
+	}
 	
 	
 	
