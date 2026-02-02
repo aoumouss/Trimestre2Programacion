@@ -7,6 +7,7 @@ public class AppJuego {
 	public static void main(String[] args) {
 
 		
+		
 		Jugador j1=new Jugador();
 		EquipoCombate e1=new EquipoCombate();
 		Parasito parasito1=new Parasito();

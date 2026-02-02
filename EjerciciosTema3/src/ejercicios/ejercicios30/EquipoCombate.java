@@ -33,7 +33,6 @@ public  class EquipoCombate {
 		
 		
 		
-		
 	}
 	
 	
@@ -42,7 +41,7 @@ public  class EquipoCombate {
 	}
 	
 	
-	
+	dadwadawdawdad
 	
 
 }

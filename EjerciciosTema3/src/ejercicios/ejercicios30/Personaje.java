@@ -6,6 +6,8 @@ public abstract class Personaje {
 	
 	private String nombre;
 	private String codigo;
+	protected Integer vida;
+	
 
 	
 	public Personaje() {

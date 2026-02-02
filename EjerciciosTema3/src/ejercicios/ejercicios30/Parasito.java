@@ -4,6 +4,7 @@ public class Parasito extends Personaje {
 
 	
 
+	
 	public Integer getPuntosVida() {
 		return 200;
 		
